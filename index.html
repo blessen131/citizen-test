@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Citizen Quiz App</title>
+
+    <link rel="stylesheet"  href="public/css/style.css" />
+
+</head>
+
+<body>
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a target="_blank" href="resource.html">Resource</a>
+</div>
+<div class="container">
+
+    <h1>🎙 Citizen Quiz</h1>
+
+    <div id="counter">Question 0/20</div>
+
+    <div class="progress">
+        <div id="progressBar" class="progress-bar"></div> </div>
+
+    <h2 id="question">Press Start</h2>
+    <button id="skipBtn" onclick="skipQuestion()" style="display:none;background:#ff9800;">
+        Skip Question
+    </button>
+
+    <button id="startBtn" onclick="startQuiz()">Start Quiz</button>
+
+    <button id="exitBtn" onclick="exitQuiz()" style="display:none;background:#e53935;">
+        Exit Quiz
+    </button>
+
+    <div class="score">
+        Score: <span id="score">0</span>
+    </div>
+
+    <div id="result" class="result"></div>
+
+    <div id="summary" class="summary"></div>
+
+</div>
+<script src="public/js/questions.js"></script>
+<script src="public/js/quiz.js"></script>
+</body>
+</html>
+
