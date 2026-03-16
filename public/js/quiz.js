@@ -35,7 +35,7 @@ function skipQuestion(){
         skipped:true
     });
     let answers = currentQuestion.answers.join('\n');
-    document.getElementById("result").innerText="⏭ Skipped \n Question: "+currentQuestion.question+"\n\n"+answers;
+    document.getElementById("result").innerText="Question: "+currentQuestion.question+" Skipped\n\n"+answers;
 
     speak("Question skipped");
 
