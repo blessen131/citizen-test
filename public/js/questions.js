@@ -186,7 +186,7 @@ const quiz = [
     },
     {
         id:23,
-        question:"Who is one of your state’s U.S. senators now?",
+        question:"Who is one of your state's U.S. senators now?",
         answers:[
             "Tammy Duckworth",
             "Richard Durbin"
@@ -371,7 +371,7 @@ const quiz = [
     },
     {
         id:47,
-        question:"What does the President’s Cabinet do?",
+        question:"What does the President's Cabinet do?",
         answers: [
             "Advises the President"
         ]
@@ -478,7 +478,7 @@ const quiz = [
             "Provide schooling and education",
             "Provide protection (police)",
             "Provide safety (fire departments)",
-            "Give a driver’s license",
+            "Give a driver's license",
             "Approve zoning and land use",
         ]
     }, {
@@ -505,7 +505,7 @@ const quiz = [
         question:"There are four amendments to the U.S. Constitution about who can vote. Describe one of them.",
         answers: [
             "Citizens eighteen and older can vote",
-            "You don’t have to pay (a poll tax) to vote",
+            "You don't have to pay (a poll tax) to vote",
             "Any citizen can vote. (Women and men can vote)",
             "A male citizen of any race (can vote)",
         ]
