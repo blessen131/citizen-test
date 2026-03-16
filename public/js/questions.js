@@ -88,7 +88,7 @@ const quiz = [
     },
     {
         id:11,
-        question:"The words Life, Liberty, and the pursuit of Happiness” are in what founding document?",
+        question:"The words Life, Liberty, and the pursuit of Happiness are in what founding document?",
         answers:[
             "Declaration of Independence"
         ]
