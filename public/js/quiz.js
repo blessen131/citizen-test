@@ -66,8 +66,8 @@ function nextQuestion(){
     document.getElementById("counter").innerText=
         "Question "+(questionIndex+1)+"/20";
 
-    document.getElementById("question").innerText=
-        currentQuestion.question;
+    // document.getElementById("question").innerText=
+    //     currentQuestion.question;
 
     speak(currentQuestion.question);
 
@@ -109,10 +109,10 @@ function checkAnswer(userAnswer){
 
     if(correct){
         score++;
-        document.getElementById("result").innerText="Question: "+currentQuestion.question+"✅\n\n"+answers; speak("Correct");
+        document.getElementById("result").innerText="Question: "+currentQuestion.question+" Correct\n\n"+answers; speak("Correct");
 
     }else{
-        document.getElementById("result").innerText="Question: "+currentQuestion.question+"❌\n\n"+answers; speak("Wrong answer");
+        document.getElementById("result").innerText="Question: "+currentQuestion.question+" Wrong\n\n"+answers; speak("Wrong answer");
     }
 
     questionIndex++;
