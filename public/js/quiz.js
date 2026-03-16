@@ -151,13 +151,13 @@ function finishQuiz(){
         html+="<div>";
 
         if(q.skipped){
-            html+="<b>"+(i+1)+". "+q.question+"</b> ⏭<br>";
+            html+="<b>"+(i+1)+". "+q.question+"</b> Wrong<br>";
         }
         else if(q.correct){
-            html+="<b>"+(i+1)+". "+q.question+"</b> ✅<br>";
+            html+="<b>"+(i+1)+". "+q.question+"</b> Correct<br>";
         }
         else{
-            html+="<b>"+(i+1)+". "+q.question+"</b> ❌<br>";
+            html+="<b>"+(i+1)+". "+q.question+"</b> Wrong<br>";
         }
         html+="Your answer: "+q.user+"<br>";
 
