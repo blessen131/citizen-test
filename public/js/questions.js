@@ -88,7 +88,7 @@ const quiz = [
     },
     {
         id:11,
-        question:"The words “Life, Liberty, and the pursuit of Happiness” are in what founding document?",
+        question:"The words Life, Liberty, and the pursuit of Happiness” are in what founding document?",
         answers:[
             "Declaration of Independence"
         ]
@@ -278,7 +278,7 @@ const quiz = [
         id: 35,
         question: "Some states have more representatives than other states Why?",
         answers: [
-            "Because of the state &apos;s population",
+            "Because of the state's population",
             "(Because) they have more people",
             "(Because) some states have more people"
         ]
@@ -500,10 +500,111 @@ const quiz = [
             "Springfield"
         ]
     },
-    // {
-    //     id:50,
+    {
+        id:63,
+        question:"There are four amendments to the U.S. Constitution about who can vote. Describe one of them.",
+        answers: [
+            "Citizens eighteen and older can vote",
+            "You don’t have to pay (a poll tax) to vote",
+            "Any citizen can vote. (Women and men can vote)",
+            "A male citizen of any race (can vote)",
+        ]
+    },{
+        id:64,
+        question:"Who can vote in federal elections, run for federal office, and serve on a jury in the United States?",
+        answers: [
+            "Citizens",
+            "Citizens of the United States",
+            "U.S. citizens",
+        ]
+    },{
+        id:65,
+        question:"What are three rights of everyone living in the United States?",
+        answers: [
+            "Freedom of expression Freedom of speech Freedom of assembly",
+            "Freedom of speech",
+            "Freedom of assembly",
+            "Freedom to petition the government",
+            "Freedom of religion",
+            "The right to bear arms"
+        ]
+    }, {
+        id:66,
+        question:"What do we show loyalty to when we say the Pledge of Allegiance?",
+        answers: [
+            "The United States",
+            "The flag",
+        ]
+    },{
+        id:67,
+        question:"Name two promises that new citizens make in the Oath of Allegiance.",
+        answers: [
+            "Be loyal to the United States Obey the laws of the United States",
+            "Give up loyalty to other countries",
+            "Defend the (U.S.) Constitution",
+            "Obey the laws of the United States",
+            "Serve in the military (if needed)",
+            "Serve (help, do important work for) the nation (if needed)",
+
+        ]
+    },{
+        id:68,
+        question:"How can people become United States citizens?",
+        answers: [
+            "Be born in the United States, under the conditions set by the 14th Amendment",
+            "Naturalize",
+            "Derive citizenship (under conditions set by Congress)"
+
+        ]
+    },{
+        id:69,
+        question:"What are two examples of civic participation in the United States?",
+        answers: [
+            "Vote  Run for office",
+            "Join a political party",
+            "Help with a campaign",
+            "Join a civic group",
+            "Join a community group",
+            "Give an elected official your opinion (on an issue)",
+            "Contact elected officials",
+            "Support or oppose an issue or policy",
+            "Write to a newspaper"
+
+        ]
+    },{
+        id:70,
+        question:"What is one way Americans can serve their country?",
+        answers: [
+            "Vote",
+            "Pay taxes",
+            "Obey the law",
+            "Serve in the military",
+            "Run for office",
+            "Work for local, state, or federal government",
+        ]
+    },{
+        id:71,
+        question:" Why is it important to pay federal taxes?",
+        answers: [
+            "Required by law",
+            "All people pay to fund the federal government",
+            "Required by the (U.S.) Constitution (16th Amendment)",
+            "Civic duty",
+        ]
+    },{
+        id:72,
+        question:" It is important for all men age 18 through 25 to register for the Selective Service. Name one reason why.",
+        answers: [
+            "Required by law",
+            "Civic duty",
+            "Makes the draft fair, if needed",
+        ]
+    }
+    // ,{
+    //     id:73,
     //     question:"",
     //     answers: [
     //     ]
     // }
+
 ];
