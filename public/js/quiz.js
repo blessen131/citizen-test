@@ -22,6 +22,7 @@ function startQuiz(){
     document.getElementById("score").innerText=0;
 
     questions=[...quiz].sort(()=>Math.random()-0.5);
+    questionsCount = questions.length;
 
     nextQuestion();
 }
@@ -35,8 +36,7 @@ function skipQuestion(){
         skipped:true
     });
     let answers = currentQuestion.answers.join('\n');
-    document.getElementById("result").innerText="Question: "+currentQuestion.question+" Skipped\n\n"+answers;
-
+    document.getElementById("result").innerHTML="Q"+currentQuestion.id+". "+currentQuestion.question+" <span style='color: orange'>Skipped</span><p>"+answers+"</p>";
     speak("Question skipped");
 
     questionIndex++;
@@ -55,7 +55,7 @@ function exitQuiz(){
 
 // NEXT QUESTION
 function nextQuestion(){
-    if(questionIndex>=20){
+    if(questionIndex>=20 || questionIndex >= questionsCount){
         document.getElementById("skipBtn").style.display='none'
         finishQuiz();
         return;
@@ -64,7 +64,7 @@ function nextQuestion(){
     currentQuestion=questions[questionIndex];
 
     document.getElementById("counter").innerText=
-        "Question "+(questionIndex+1)+"/20";
+        "Question "+(questionIndex+1)+"/"+questionsCount;
 
     // document.getElementById("question").innerText=
     //     currentQuestion.question;
@@ -99,7 +99,7 @@ function checkAnswer(userAnswer){
 
     let answersLower = currentQuestion.answers.map(a => a.toLowerCase());
     let correct= answersLower.some(a=>userAnswer.includes(a));
-    let answers = currentQuestion.answers.join('\n');
+    let answers = currentQuestion.answers.join('<br>');
     history.push({
         question:currentQuestion.question,
         user:userAnswer,
@@ -109,10 +109,12 @@ function checkAnswer(userAnswer){
 
     if(correct){
         score++;
-        document.getElementById("result").innerText="Question: "+currentQuestion.question+" Correct\n\n"+answers; speak("Correct");
+        document.getElementById("result").innerHTML="Q"+currentQuestion.id+". "+currentQuestion.question+" <span style='color:green'>Correct</span><p>"+answers+"</p>";
+        speak("Correct");
 
     }else{
-        document.getElementById("result").innerText="Question: "+currentQuestion.question+" Wrong\n\n"+answers; speak("Wrong answer");
+        document.getElementById("result").innerHTML="Q"+currentQuestion.id+". "+currentQuestion.question+" <span style='color: #e53935'>Wrong</span><p>"+answers+"</p>";
+        speak("Wrong answer");
     }
 
     questionIndex++;
@@ -128,7 +130,7 @@ function checkAnswer(userAnswer){
 // PROGRESS
 function updateProgress(){
 
-    let percent=(questionIndex/20)*100;
+    let percent=(questionIndex/questionsCount)*100;
 
     document.getElementById("progressBar").style.width=percent+"%";
 
@@ -136,15 +138,15 @@ function updateProgress(){
 
 // FINISH QUIZ
 function finishQuiz(){
-
-    if(score>=12)
+    let result =  (score/questionsCount)*100
+    if(result>=60)
     {
         finalResult ="Passed"
     } else
     {
         finalResult ="Failed"
     }
-    document.getElementById("question").innerText="Quiz Completed";
+    document.getElementById("question").innerText="Quiz Completed | Result:"+Math.floor(result)+"%";
     document.getElementById("counter").innerText=finalResult;
     document.getElementById("result").style.display='none';
 
@@ -157,17 +159,17 @@ function finishQuiz(){
         html+="<div>";
 
         if(q.skipped){
-            html+="<b>"+(i+1)+". "+q.question+"</b> Wrong<br>";
+            html+="<b>"+q.id+". "+q.question+"</b> <span style='color:red '>Wrong</span><br>";
         }
         else if(q.correct){
-            html+="<b>"+(i+1)+". "+q.question+"</b> Correct<br>";
+            html+="<b>"+q.id+". "+q.question+"</b> <span style='color:green '>Correct</span><br>";
         }
         else{
-            html+="<b>"+(i+1)+". "+q.question+"</b> Wrong<br>";
+            html+="<b>"+q.id+". "+q.question+"</b> <span style='color:red '>Wrong</span><br>";
         }
         html+="Your answer: "+q.user+"<br>";
 
-        html+="Correct answers: "+q.correctAnswers.join(", ")+"<br>";
+        html+="Correct answers: "+q.correctAnswers.join("<br>")+"<br>";
 
         html+="<hr></div>";
 
