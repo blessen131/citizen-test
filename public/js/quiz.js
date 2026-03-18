@@ -22,7 +22,12 @@ function startQuiz(){
     document.getElementById("score").innerText=0;
 
     questions=[...quiz].sort(()=>Math.random()-0.5);
-    questionsCount = questions.length;
+    if( questions.length>=20)
+    {
+        questionsCount = 20
+    } else {
+        questionsCount = questions.length;
+    }
 
     nextQuestion();
 }
