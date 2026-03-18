@@ -417,14 +417,14 @@ const part2 = [
         id:53,
         question:"How many seats are on the Supreme Court?",
         answers: [
-            "Nine", 9
+            "Nine", "9"
         ]
     }
     , {
         id:54,
         question:"How many Supreme Court justices are usually needed to decide a case?",
         answers: [
-            "five",5
+            "five","5"
         ]
     }
     , {
@@ -894,6 +894,7 @@ const part6 = [
         answers: [
             "(Bombing of) Pearl Harbor",
             "Japanese attacked Pearl Harbor",
+            "To support the Allied Powers",
             "To support the Allied Powers (England, France, and Russia)",
             "To oppose the Axis Powers (Germany, Italy, and Japan)",
         ]
@@ -1025,7 +1026,7 @@ const part7 = [
         ]
     },{
         id:120,
-        question:"Where is the Statue of Liberty?\n",
+        question:"Where is the Statue of Liberty?",
         answers: [
             "New York Harbor",
             "Liberty Island [Also acceptable are New Jersey, near New York City, and on the Hudson (River).",
@@ -1034,22 +1035,22 @@ const part7 = [
         id:121,
         question:"Why does the flag have 13 stripes?",
         answers: [
-            "(Because there were) 13 original colonies",
-            "(Because the stripes) represent the original colonies",
+            "Because there were 13 original colonies",
+            "Because the stripes represent the original colonies",
         ]
     },{
         id:122,
         question:"Why does the flag have 50 stars?",
         answers: [
-            "(Because there is) one star for each state",
-            "(Because) each star represents a state",
+            "Because there is one star for each state",
+            "Because each star represents a state",
             "Because there are 50 states",
         ]
     },{
         id:123,
         question:"What is the name of the national anthem?",
         answers: [
-            "The Star-Spangled Banner",
+            "The Star Spangled Banner",
         ]
     },{
         id:124,
@@ -1073,9 +1074,9 @@ const part8 = [
         id:126,
         question:"Name three national U.S. holidays",
         answers: [
-            "New Year’s Day",
+            "New Year's Day",
             "Martin Luther King, Jr. Day",
-            "Presidents Day (Washington’s Birthday)",
+            "Presidents Day (Washington's Birthday)",
             "Memorial Day",
             "Juneteenth",
             "Independence Day",
@@ -1101,12 +1102,12 @@ const part8 = [
     }
 ];
 const quiz = [].concat(
-    part1,
-    part2,
-    part3,
-    part4,
-    part5,
+    //part1,
+    //part2,
+    //part3,
+    // part4,
+    // part5,
     part6,
-    part7,
-    part8
+    //part7,
+    //part8
 );
