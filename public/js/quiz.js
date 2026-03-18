@@ -137,12 +137,18 @@ function updateProgress(){
 // FINISH QUIZ
 function finishQuiz(){
 
+    if(score>=12)
+    {
+        finalResult ="Passed"
+    } else
+    {
+        finalResult ="Failed"
+    }
     document.getElementById("question").innerText="Quiz Completed";
-
-    document.getElementById("counter").innerText="Finished";
+    document.getElementById("counter").innerText=finalResult;
     document.getElementById("result").style.display='none';
 
-    speak("Quiz completed. Your score is "+score);
+    speak("Quiz completed. Your score is "+score+" You "+finalResult+" the quiz");
 
     let html="<h3>Quiz Summary</h3>";
 
