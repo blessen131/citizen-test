@@ -1,4 +1,4 @@
-const quiz = [
+const part1 = [
     {
         id:1,
         question:"What is the form of government of the United States?",
@@ -7,15 +7,13 @@ const quiz = [
             "constitution based federal republic",
             "representative democracy"
         ]
-    },
-    {
+    },{
         id:2,
         question:"What is the supreme law of the land?",
         answers:[
             "Constitution"
         ]
-    },
-    {
+    },{
         id:3,
         question:"Name one thing the U.S. Constitution does?",
         answers:[
@@ -24,10 +22,9 @@ const quiz = [
             "Defines the parts of government",
             "Protects the rights of the people"
         ]
-    },
-    {
+    },{
         id:4,
-        question:"The U.S. Constitution starts with the words “We the People.” What does “We the People” mean?",
+        question:"The U.S. Constitution starts with the words We the People What does We the People mean?",
         answers:[
             "Self government",
             "Popular sovereignty",
@@ -35,29 +32,25 @@ const quiz = [
             "People should govern themselves",
             "(Example of) social contract"
         ]
-    },
-    {
+    },{
         id:5,
         question:"How are changes made to the U.S. Constitution?",
         answers:[
             "Amendments",
             "The amendment process"
         ]
-    },
-    {
+    },{
         id:6,
         question:"What does the Bill of Rights protect?",
         answers:[
             "The basic rights of Americans",
             "The basic rights of people living in the United States"
         ]
-    },
-    {
+    },{
         id:7,
         question:"How many amendments does the U.S. Constitution have?",
         answers:["27"]
-    },
-    {
+    },{
         id:8,
         question:"Why is the Declaration of Independence important?",
         answers:[
@@ -66,15 +59,13 @@ const quiz = [
             "It identifies inherent rights",
             "It identifies individual freedoms"
         ]
-    },
-    {
+    },{
         id:9,
         question:"What founding document said the American colonies were free from Britain?",
         answers:[
             "Declaration of Independence"
         ]
-    },
-    {
+    },{
         id:10,
         question:"Name two important ideas from the Declaration of Independence and the U.S. Constitution",
         answers:[
@@ -85,23 +76,20 @@ const quiz = [
             "Limited government",
             "Self government"
         ]
-    },
-    {
+    },{
         id:11,
         question:"The words Life, Liberty, and the pursuit of Happiness are in what founding document?",
         answers:[
             "Declaration of Independence"
         ]
-    },
-    {
+    },{
         id:12,
         question:"What is the economic system of the United States?",
         answers:[
             "Capitalism",
             "Free market economy"
         ]
-    },
-    {
+    },{
         id:13,
         question:"What is the rule of law?",
         answers: [
@@ -110,8 +98,7 @@ const quiz = [
             "Government must obey the law",
             "No one is above the law."
         ]
-    },
-    {
+    },{
         id:14,
         question:"Many documents influenced the U.S. Constitution. Name one",
         answers:[
@@ -124,8 +111,7 @@ const quiz = [
             "Mayflower Compact",
             "Iroquois Great Law of Peace"
         ]
-    },
-    {
+    },{
         id:15,
         question:"There are three branches of government. Why?",
         answers:[
@@ -134,6 +120,8 @@ const quiz = [
             "Separation of powers"
         ]
     },
+];
+const part2 = [
     {
         id:16,
         question:"Name the three branches of government.",
@@ -181,7 +169,7 @@ const quiz = [
         id:22,
         question:"How long is a term for a U.S. senator?",
         answers:[
-            "Six","6"
+            "Six years","6 years"
         ]
     },
     {
@@ -379,7 +367,7 @@ const quiz = [
         id:48,
         question:"What are two Cabinet level positions?",
         answers: [
-            "Attorney General,Vice President",
+            "Attorney General Vice President",
             "Secretary of Agriculture",
             "Secretary of Commerce",
             "Secretary of Education",
@@ -500,6 +488,8 @@ const quiz = [
             "Springfield"
         ]
     },
+];
+const part3 = [
     {
         id:63,
         question:"There are four amendments to the U.S. Constitution about who can vote. Describe one of them.",
@@ -591,7 +581,10 @@ const quiz = [
             "Required by the (U.S.) Constitution (16th Amendment)",
             "Civic duty",
         ]
-    },{
+    },
+];
+const part4 = [
+    {
         id:72,
         question:" It is important for all men age 18 through 25 to register for the Selective Service. Name one reason why.",
         answers: [
@@ -599,12 +592,521 @@ const quiz = [
             "Civic duty",
             "Makes the draft fair, if needed",
         ]
+    },{
+        id:73,
+        question:" The colonists came to America for many reasons. Name one.",
+        answers: [
+            "Freedom",
+            "Political liberty",
+            "Religious freedom",
+            "Economic opportunity",
+            "Escape persecution",
+        ]
+    },{
+        id:74,
+        question:"Who lived in America before the Europeans arrived?",
+        answers: [
+            "American Indians",
+            "Native Americans",
+        ]
+    },{
+        id:75,
+        question:"What group of people was taken and sold as slaves?",
+        answers: [
+            "Africans",
+            "People from Africa",
+        ]
+    },{
+        id:76,
+        question:"What war did the Americans fight to win independence from Britain?",
+        answers: [
+            "American Revolution"
+        ]
+    },{
+        id:77,
+        question:"Name one reason why the Americans declared independence from Britain.",
+        answers: [
+            "High taxes",
+            "Taxation without representation",
+            "British soldiers stayed in Americans’ houses (boarding, quartering)",
+            "They did not have self-government",
+            "Boston Massacre",
+            "Boston Tea Party (Tea Act)",
+            "Stamp Act",
+            "Sugar Act",
+            "Townshend Acts",
+            "Intolerable (Coercive) Acts",
+        ]
+    },{
+        id:78,
+        question:"Who wrote the Declaration of Independence?",
+        answers: [
+            "Thomas Jefferson"
+        ]
+    },{
+        id:79,
+        question:"When was the Declaration of Independence adopted?",
+        answers: [
+            "July 4 17 76"
+        ]
+    },{
+        id:80,
+        question:"The American Revolution had many important events. Name one.",
+        answers: [
+            "(Battle of) Bunker Hill",
+            "Declaration of Independence",
+            "Washington Crossing the Delaware (Battle of Trenton)",
+            "(Battle of) Saratoga",
+            "Valley Forge (Encampment)",
+            "(Battle of) Yorktown (British surrender at Yorktown)",
+        ]
+    },{
+        id:81,
+        question:"There were 13 original states. Name five.",
+        answers: [
+            "New Hampshire",
+            "Massachusetts",
+            "Rhode Island",
+            "Connecticut",
+            "New York",
+            "New Jersey",
+            "Pennsylvania",
+            "Delaware",
+            "Maryland",
+            "Virginia",
+            "North Carolina",
+            "South Carolina",
+            "Georgia",
+        ]
+    },{
+        id:82,
+        question:"What founding document was written in 1787?\n",
+        answers: [
+            "U.S Constitution"
+        ]
+    },{
+        id:83,
+        question:"The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
+        answers: [
+            "James Madison",
+            "Alexander Hamilton",
+            "John Jay",
+            "Publius",
+        ]
+    },{
+        id:84,
+        question:"Why were the Federalist Papers important?",
+        answers: [
+            "They helped people understand the U.S Constitution.",
+            "They supported passing the (U.S.) Constitution",
+        ]
+    },{
+        id:85,
+        question:" Benjamin Franklin is famous for many things. Name one.",
+        answers: [
+            "Founded the first free public libraries",
+            "First Postmaster General of the United States",
+            "Helped write the Declaration of Independence",
+            "Inventor",
+            "U.S. diplomat",
+
+        ]
+    },{
+        id:86,
+        question:"George Washington is famous for many things. Name one.",
+        answers: [
+            "Father of Our Country",
+            "First president of the United States",
+            "General of the Continental Army",
+            "President of the Constitutional Convention",
+        ]
+    },{
+        id:87,
+        question:"Thomas Jefferson is famous for many things. Name one.",
+        answers: [
+            "Writer of the Declaration of Independence",
+            "Third president of the United States",
+            "Doubled the size of the United States (Louisiana Purchase)",
+            "First Secretary of State",
+            "Founded the University of Virginia",
+            "Writer of the Virginia Statute on Religious Freedom",
+        ]
+    },{
+        id:88,
+        question:"James Madison is famous for many things. Name one.",
+        answers: [
+            "Father of the Constitution",
+            "Fourth president of the United States",
+            "President during the War of 1812",
+            "One of the writers of the Federalist Papers",
+        ]
+    },{
+        id:89,
+        question:"Alexander Hamilton is famous for many things. Name one.",
+        answers: [
+            "First Secretary of the Treasury",
+            "One of the writers of the Federalist Papers",
+            "Helped establish the First Bank of the United States",
+            "Aide to General George Washington",
+            "Member of the Continental Congress",
+        ]
+    },
+];
+const part5 = [
+    {
+        id:90,
+        question:"What territory did the United States buy from France in 1803?",
+        answers: [
+            "Louisiana"
+        ]
+    },{
+        id:91,
+        question:"Name one war fought by the United States in the 1800s.",
+        answers: [
+            "War of 1812",
+            "Mexican-American War",
+            "Civil War",
+            "Spanish-American War",
+        ]
+    },{
+        id:92,
+        question:" Name the U.S. war between the North and the South",
+        answers: [
+            "The Civil War"
+        ]
+    },{
+        id:93,
+        question:"The Civil War had many important events. Name one",
+        answers: [
+            "(Battle of) Fort Sumter",
+            "Emancipation Proclamation",
+            "(Battle of) Vicksburg",
+            "(Battle of) Gettysburg",
+            "Sherman’s March",
+            "(Surrender at) Appomattox",
+            "(Battle of) Antietam/Sharpsburg",
+            "Lincoln was assassinated",
+        ]
+    },{
+        id:94,
+        question:"Abraham Lincoln is famous for many things. Name one.",
+        answers: [
+            "Freed the slaves",
+            "Saved (or preserved) the Union",
+            "Led the United States during the Civil War",
+            "16th president of the United States",
+            "Delivered the Gettysburg Address",
+        ]
+    },{
+        id:95,
+        question:"What did the Emancipation Proclamation do?",
+        answers: [
+            "Freed the slaves",
+            "Freed slaves in the Confederacy",
+            "Freed slaves in the Confederate states",
+            "Freed slaves in most Southern states",
+        ]
+    },{
+        id:96,
+        question:"What U.S. war ended slavery?",
+        answers: [
+            "The Civil War"
+        ]
+    },{
+        id:97,
+        question:"What amendment says all persons born or naturalized in the United States and subject to the jurisdiction thereof, are U.S. citizens?",
+        answers: [
+            "14th Amendment"
+        ]
+    },{
+        id:98,
+        question:" When did all men get the right to vote?",
+        answers: [
+            "After the Civil War",
+            "During Reconstruction",
+            "(With the) 15th Amendment",
+            "1870",
+        ]
+    },{
+        id:99,
+        question:"Name one leader of the women's rights movement in the 1800s.",
+        answers: [
+            "Susan B Anthony",
+            "Elizabeth Cady Stanton",
+            "Sojourner Truth",
+            "Harriet Tubman",
+            "Lucretia Mott",
+            "Lucy Stone",
+
+        ]
+    },
+];
+const part6 = [
+    {
+        id:100,
+        question:"Name one war fought by the United States in the 1900s.",
+        answers: [
+            "World War I",
+            "World War II",
+            "Korean War",
+            "Vietnam War",
+            "(Persian) Gulf War",
+        ]
+    },{
+        id:101,
+        question:"Why did the United States enter World War I?",
+        answers: [
+            "Because Germany attacked U.S. (civilian) ships",
+            "To support the Allied Powers",
+            "To oppose the Central Powers (Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria)",
+        ]
+    },{
+        id:102,
+        question:"When did all women get the right to vote?",
+        answers: [
+            "1920",
+            "After World War I",
+            "(With the) 19th Amendment",
+        ]
+    },{
+        id:103,
+        question:"What was the Great Depression?",
+        answers: [
+            "Longest economic recession in modern history"
+        ]
+    },{
+        id:104,
+        question:"When did the Great Depression start?",
+        answers: [
+            "The Great Crash (1929)",
+            "The Great Crash",
+            "Stock market crash of 1929",
+        ]
+    },{
+        id:105,
+        question:"Who was president during the Great Depression and World War II?",
+        answers: [
+            "Franklin Roosevelt",
+        ]
+    },{
+        id:106,
+        question:"Why did the United States enter World War II?",
+        answers: [
+            "(Bombing of) Pearl Harbor",
+            "Japanese attacked Pearl Harbor",
+            "To support the Allied Powers (England, France, and Russia)",
+            "To oppose the Axis Powers (Germany, Italy, and Japan)",
+        ]
+    },{
+        id:107,
+        question:"Dwight Eisenhower is famous for many things. Name one",
+        answers: [
+            "General during World War II",
+            "President at the end of (during) the Korean War",
+            "34th president of the United States",
+            "Signed the Federal-Aid Highway Act of 1956 (Created the Interstate System)",
+
+        ]
+    },{
+        id:108,
+        question:"Who was the United States main rival during the Cold War?",
+        answers: [
+            "Soviet Union",
+            "USSR",
+            "Russia",
+        ]
+    },{
+        id:109,
+        question:"During the Cold War, what was one main concern of the United States?",
+        answers: [
+            "Communism",
+            "Nuclear war",
+        ]
+    },{
+        id:110,
+        question:"Why did the United States enter the Korean War?",
+        answers: [
+            "To stop the spread of communism"
+        ]
+    },{
+        id:111,
+        question:"Why did the United States enter the Vietnam War?",
+        answers: [
+            "To stop the spread of communism"
+        ]
+    },{
+        id:112,
+        question:"What did the civil rights movement do?",
+        answers: [
+            "Fought to end racial discrimination"
+        ]
+    },{
+        id:113,
+        question:"Martin Luther King, Jr. is famous for many things. Name one.",
+        answers: [
+            "Fought for civil rights",
+            "Worked for equality for all Americans",
+            "Worked to ensure that people would not be judged by the color of their skin, but by the content of their character",
+        ]
+    },{
+        id:114,
+        question:"Why did the United States enter the Persian Gulf War?",
+        answers: [
+            "To force the Iraqi military from Kuwait"
+        ]
+    },{
+        id:115,
+        question:"What major event happened on September 11, 2001 in the United States?",
+        answers: [
+            "Terrorists attacked the United States",
+            "Terrorists took over two planes and crashed them into the World Trade Center in New York City",
+            "Terrorists took over a plane and crashed into the Pentagon in Arlington, Virginia",
+            "Terrorists took over a plane originally aimed at Washington, D.C., and crashed in a field in Pennsylvania",
+        ]
+    },{
+        id:116,
+        question:"Name one U.S. military conflict after the September 11, 2001 attacks.",
+        answers: [
+            "(Global) War on Terror",
+            "War in Afghanistan",
+            "War in Iraq",
+        ]
+    },{
+        id:117,
+        question:"Name one American Indian tribe in the United States",
+        answers: [
+            "Apache",
+            "Blackfeet",
+            "Cayuga",
+            "Cherokee",
+            "Cheyenne",
+            "Chippewa",
+            "Choctaw",
+            "Creek",
+            "Crow",
+            "Hopi",
+            "Huron",
+            "Inupiat",
+            "Lakota",
+            "Mohawk",
+            "Mohegan",
+            "Navajo",
+            "Oneida",
+            "Onondaga",
+            "Pueblo",
+            "Seminole",
+            "Seneca",
+            "Shawnee",
+            "Sioux",
+            "Teton",
+            "Tuscarora",
+        ]
+    },{
+        id:118,
+        question:"Name one example of an American innovation",
+        answers: [
+            "Light bulb",
+            "Automobile (cars, internal combustion engine)",
+            "Skyscrapers",
+            "Airplane",
+            "Assembly line",
+            "Landing on the moon",
+            "Integrated circuit (IC)",
+        ]
     }
-    // ,{
-    //     id:73,
-    //     question:"",
-    //     answers: [
-    //     ]
-    // }
 
 ];
+const part7 = [
+    {
+        id:119,
+        question:"What is the capital of the United States?",
+        answers: [
+            "Washington D.C."
+        ]
+    },{
+        id:120,
+        question:"Where is the Statue of Liberty?\n",
+        answers: [
+            "New York Harbor",
+            "Liberty Island [Also acceptable are New Jersey, near New York City, and on the Hudson (River).",
+        ]
+    },{
+        id:121,
+        question:"Why does the flag have 13 stripes?",
+        answers: [
+            "(Because there were) 13 original colonies",
+            "(Because the stripes) represent the original colonies",
+        ]
+    },{
+        id:122,
+        question:"Why does the flag have 50 stars?",
+        answers: [
+            "(Because there is) one star for each state",
+            "(Because) each star represents a state",
+            "Because there are 50 states",
+        ]
+    },{
+        id:123,
+        question:"What is the name of the national anthem?",
+        answers: [
+            "The Star-Spangled Banner",
+        ]
+    },{
+        id:124,
+        question:"The Nation's first motto was E Pluribus Unum. What does that mean?",
+        answers: [
+            "Out of many, one",
+            "We all become one",
+
+        ]
+    }
+];
+const part8 = [
+    {
+        id:125,
+        question:"What is Independence Day?",
+        answers: [
+            "A holiday to celebrate U.S. independence (from Britain)",
+            "The country's birthday",
+        ]
+    },{
+        id:126,
+        question:"Name three national U.S. holidays",
+        answers: [
+            "New Year’s Day",
+            "Martin Luther King, Jr. Day",
+            "Presidents Day (Washington’s Birthday)",
+            "Memorial Day",
+            "Juneteenth",
+            "Independence Day",
+            "Labor Day",
+            "Columbus Day",
+            "Veterans Day",
+            "Thanksgiving Day",
+            "Christmas Day",
+        ]
+    },{
+        id:127,
+        question:"What is Memorial Day?",
+        answers: [
+            "A holiday to honor soldiers who died in military service"
+        ]
+    },{
+        id:128,
+        question:"What is Veterans Day?",
+        answers: [
+            "A holiday to honor people in the U.S. military",
+            "A holiday to honor people who have served in the U.S. military",
+        ]
+    }
+];
+const quiz = [].concat(
+    part1,
+    part2,
+    part3,
+    part4,
+    part5,
+    part6,
+    part7,
+    part8
+);
