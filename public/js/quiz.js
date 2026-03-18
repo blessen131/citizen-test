@@ -109,7 +109,8 @@ function checkAnswer(userAnswer){
         question:currentQuestion.question,
         user:userAnswer,
         correctAnswers:currentQuestion.answers,
-        correct:correct
+        correct:correct,
+        id:currentQuestion.id
     });
 
     if(correct){
@@ -164,13 +165,13 @@ function finishQuiz(){
         html+="<div>";
 
         if(q.skipped){
-            html+="<b>"+q.id+". "+q.question+"</b> <span style='color:red '>Wrong</span><br>";
+            html+="<b>Q"+q.id+". "+q.question+"</b> <span style='color:red '>Wrong</span><br>";
         }
         else if(q.correct){
-            html+="<b>"+q.id+". "+q.question+"</b> <span style='color:green '>Correct</span><br>";
+            html+="<b>Q"+q.id+". "+q.question+"</b> <span style='color:green '>Correct</span><br>";
         }
         else{
-            html+="<b>"+q.id+". "+q.question+"</b> <span style='color:red '>Wrong</span><br>";
+            html+="<b>Q"+q.id+". "+q.question+"</b> <span style='color:red '>Wrong</span><br>";
         }
         html+="Your answer: "+q.user+"<br>";
 
