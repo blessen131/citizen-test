@@ -40,7 +40,7 @@ function skipQuestion(){
         correct:false,
         skipped:true
     });
-    let answers = currentQuestion.answers.join('\n');
+    let answers = currentQuestion.answers.join('<br>');
     document.getElementById("result").innerHTML="Q"+currentQuestion.id+". "+currentQuestion.question+" <span style='color: orange'>Skipped</span><p>"+answers+"</p>";
     speak("Question skipped");
 
